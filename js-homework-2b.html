@@ -19,17 +19,34 @@ console.log(score1);
 var score3 = game(5, 5);
 console.log(score3);
 
+function heyho(someonesname) {
+  if(someonesname.toLowerCase() == "kirsten") {
+    console.log("Hello, group member");
+  }
 
-if (name == "Becka") {
-  console.log("Hello, group member");
+  else if(someonesname.toLowerCase() == "becka") {
+    console.log("Hello, group member");
+  }
+
+  else if(someonesname.toLowerCase() == "andrew") {
+    console.log("Hello, teacher");
+  }
+
+  else {
+    console.log("Hello!");
+  }
 }
-else if (name == "Andrew") {
-  console.log("Hello, teacher")
-}
-else {
-  console.log("Hello!")
-}
-name == "Becka"
-console.log("Becka");
+var sayhi = heyho("Jordan");
+  console.log(sayhi);
+
+var sayhi2 = heyho("Becka");
+  console.log(sayhi2);
+
+var sayhi3 = heyho("Andrew");
+  console.log(sayhi3);
+
+var promptname = prompt("What is your name?");
+var togethernow = heyho(promptname)
+console.log(togethernow) //connecting the functions together
 
 </script>
