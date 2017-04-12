@@ -1,12 +1,12 @@
 <script>
 var name = prompt("What is your name?");
-  console.log("What is your name?")
+  console.log(name)
 var school = "University of Texas";
   console.log(school.length);
   console.log(school.toLowerCase());
 
-function hello(name) {
-  return "hello " + name;
+function hello(argument) {
+  return "hello " + argument;
 };
 var myname = hello("Kirsten");
 console.log(myname);
@@ -15,9 +15,6 @@ console.log(friend);
 var roop = hello("Roopa");
 console.log(roop);
 
-function hiuser(prompt) {
-  return hello + name;
-}
-console.log(prompt);
-//Something is wrong here
+var popup = hello(name);
+console.log(popup);
 </script>
