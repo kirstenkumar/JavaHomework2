@@ -1,20 +1,24 @@
 <script>
-var homeScore = 3;
-console.log(homeScore);
-var awayScore = 5;
-var homeScore = 6;
-console.log(homeScore);
-var awayScore = 4;
-console.log(awayScore);
+function game(homeScore, awayScore) {
 if (homeScore > awayScore) {
-  console.log("The home team won");
+  console.log("The home team won.");
 }
-else if (homeScore < awayScore) {
-  console.log("The away team won");
+else if (homeScore == awayScore) {
+  console.log("The game tied.");
 }
 else {
-  console.log("The game tied.")
+  console.log("The away team won.")
 }
+}
+var score1 = game(12, 6);
+console.log(score1);
+
+var score2 = game(3, 17);
+console.log(score1);
+
+var score3 = game(5, 5);
+console.log(score3);
+
 
 if (name == "Becka") {
   console.log("Hello, group member");
